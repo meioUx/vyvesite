@@ -1,0 +1,2 @@
+Built-in image_gen. Final asset: public/images/contact-support.png
+Prompt: Cinematic 3D smoked-glass chat bubbles with luminous lime edges, orbiting particles and light trails; charcoal #101114 backdrop; premium fitness RPG aesthetic; centered landscape 3:2 composition; no text, letters, logos or watermark.

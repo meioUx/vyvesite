@@ -1,0 +1,203 @@
+[
+  ["Chama", "7 dias seguidos", "Comum", "Consistência", "consistencia/chama.png"],
+  ["Foco", "14 dias seguidos", "Comum", "Consistência", "consistencia/foco.png"],
+  ["Disciplina", "30 dias seguidos", "Rara", "Consistência", "consistencia/disciplina.png"],
+  ["Incansável", "60 dias seguidos", "Épica", "Consistência", "consistencia/incansável.png"],
+  [
+    "Lenda da Consistência",
+    "100 dias seguidos",
+    "Lendária",
+    "Consistência",
+    "consistencia/lensa da consistencia.png"
+  ],
+  ["Primeiro Passo", "1 treino concluído", "Comum", "Treinos", "treinos/primeiro passo.png"],
+  ["Ritmo", "10 treinos concluídos", "Comum", "Treinos", "treinos/ritmo.png"],
+  ["Constância", "50 treinos concluídos", "Rara", "Treinos", "treinos/constancia.png"],
+  ["Alta Voltagem", "100 treinos concluídos", "Épica", "Treinos", "treinos/alta voltagem.png"],
+  ["VYVE Pro", "500 treinos concluídos", "Lendária", "Treinos", "treinos/vyve pro.png"],
+  ["Base Forte", "50 repetições válidas", "Comum", "Força", "força/base forte.png"],
+  ["Força em Alta", "500 repetições válidas", "Comum", "Força", "força/força em alta.png"],
+  ["Potência", "1.000 repetições válidas", "Rara", "Força", "força/potencia.png"],
+  ["Força Lendária", "5.000 repetições válidas", "Épica", "Força", "força/Força lendária.png"],
+  ["Titã", "25.000 repetições válidas", "Lendária", "Força", "força/titã.png"],
+  [
+    "Primeiros Passos",
+    "1 km de caminhada",
+    "Comum",
+    "Corrida e Cardio",
+    "corrida e cardio/primeiros passos.png"
+  ],
+  ["5K", "Primeira corrida de 5 km", "Rara", "Corrida e Cardio", "corrida e cardio/5k.png"],
+  ["10K", "Corrida de 10 km", "Rara", "Corrida e Cardio", "corrida e cardio/10k.png"],
+  [
+    "Meia Maratona",
+    "21 km concluídos",
+    "Épica",
+    "Corrida e Cardio",
+    "corrida e cardio/meia maratona.png"
+  ],
+  ["Maratona", "42 km concluídos", "Lendária", "Corrida e Cardio", "corrida e cardio/maratona.png"],
+  [
+    "Mobilidade Ativa",
+    "10 min de mobilidade",
+    "Comum",
+    "Habilidades",
+    "habilidades/mobilidade ativa.png"
+  ],
+  ["Fluidez", "50 min de alongamento", "Comum", "Habilidades", "habilidades/fluidez.png"],
+  [
+    "Controle Corporal",
+    "10 exercícios diferentes",
+    "Rara",
+    "Habilidades",
+    "habilidades/controle corporal.png"
+  ],
+  [
+    "Movimento Livre",
+    "50 exercícios diferentes",
+    "Épica",
+    "Habilidades",
+    "habilidades/movimento livre.png"
+  ],
+  [
+    "Mestre do Movimento",
+    "100 exercícios diferentes",
+    "Lendária",
+    "Habilidades",
+    "habilidades/mestre do movimento.png"
+  ],
+  [
+    "Explorador",
+    "Complete todas as trilhas iniciais",
+    "Rara",
+    "Desafios Especiais",
+    "desafios especiais/explorador.png"
+  ],
+  [
+    "Aventureiro",
+    "3 trilhas completas",
+    "Rara",
+    "Desafios Especiais",
+    "desafios especiais/aventureiro.png"
+  ],
+  [
+    "Conquistador",
+    "10 desafios especiais",
+    "Épica",
+    "Desafios Especiais",
+    "desafios especiais/conquistador.png"
+  ],
+  [
+    "Elite",
+    "Vença um desafio em equipe",
+    "Épica",
+    "Desafios Especiais",
+    "desafios especiais/elite.png"
+  ],
+  [
+    "Imparável",
+    "Conclua todos os desafios de uma temporada",
+    "Lendária",
+    "Desafios Especiais",
+    "desafios especiais/imparavel.png"
+  ],
+  [
+    "Energia do Dia",
+    "Treine pela manhã",
+    "Comum",
+    "Estilo de Vida",
+    "estilo de vida/energia do dia.png"
+  ],
+  ["Night Move", "Treine à noite", "Comum", "Estilo de Vida", "estilo de vida/nigth move.png"],
+  [
+    "Equilíbrio",
+    "Treine em 3 horários diferentes",
+    "Rara",
+    "Estilo de Vida",
+    "estilo de vida/equilibrio.png"
+  ],
+  [
+    "Bem-estar",
+    "7 dias com exercícios leves",
+    "Épica",
+    "Estilo de Vida",
+    "estilo de vida/bem estar.png"
+  ],
+  [
+    "Vida Plena",
+    "30 dias combinando treino, mobilidade e meditação",
+    "Épica",
+    "Estilo de Vida",
+    "estilo de vida/vida plena.png"
+  ],
+  [
+    "Primeiro Registro",
+    "Registre seu peso",
+    "Comum",
+    "Evolução Pessoal",
+    "evolução pessoal/primeiro registro.png"
+  ],
+  [
+    "Medidas Ativas",
+    "Registre 3 medidas",
+    "Rara",
+    "Evolução Pessoal",
+    "evolução pessoal/medidas ativas.png"
+  ],
+  [
+    "Progresso Real",
+    "10 registros de peso",
+    "Rara",
+    "Evolução Pessoal",
+    "evolução pessoal/progresso real.png"
+  ],
+  [
+    "Evolução Visível",
+    "3 fotos de progresso",
+    "Épica",
+    "Evolução Pessoal",
+    "evolução pessoal/evolução visivel.png"
+  ],
+  [
+    "Nova Versão",
+    "12 semanas de evolução consistente",
+    "Lendária",
+    "Evolução Pessoal",
+    "evolução pessoal/nova versão.png"
+  ],
+  [
+    "Subiu de Nível",
+    "Alcance o nível 10",
+    "Rara",
+    "Marcos Importantes",
+    "marcos importantes/subiu de nivel.png"
+  ],
+  [
+    "Nova Liga",
+    "Seja promovido pela primeira vez",
+    "Rara",
+    "Marcos Importantes",
+    "marcos importantes/nova liga.png"
+  ],
+  [
+    "Domínio",
+    "Fique 4 semanas na mesma liga",
+    "Épica",
+    "Marcos Importantes",
+    "marcos importantes/dominio.png"
+  ],
+  [
+    "Colecionador",
+    "50 medalhas desbloqueadas",
+    "Épica",
+    "Marcos Importantes",
+    "marcos importantes/colecionador.png"
+  ],
+  [
+    "VYVE Legend",
+    "Alcance a liga Diamante",
+    "Lendária",
+    "Marcos Importantes",
+    "marcos importantes/vyve legend.png"
+  ]
+]

@@ -1,0 +1,111 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model WaitlistEntry {
+  id                 String          @id @default(uuid())
+  name               String?         @db.VarChar(80)
+  email              String          @unique @db.VarChar(254)
+  emailIdentity      String?         @unique @db.VarChar(254)
+  consent            Boolean
+  consentVersion     String          @db.VarChar(32)
+  createdAt          DateTime        @default(now())
+  source             String?         @db.VarChar(120)
+  campaign           String?         @db.VarChar(120)
+  medium             String?         @db.VarChar(120)
+  marketingConsent   Boolean         @default(false)
+  marketingConsentAt DateTime?
+  verifiedAt         DateTime?
+  referralCode       String          @unique @default(uuid())
+  referredById       String?
+  referredBy         WaitlistEntry?  @relation("Referrals", fields: [referredById], references: [id], onDelete: SetNull)
+  referrals          WaitlistEntry[] @relation("Referrals")
+  tokens             AccessToken[]
+  sessions           MemberSession[]
+  messages           MailMessage[]
+  betaInvitedAt      DateTime?
+  migrationConsentAt DateTime?
+  challengeStartedAt DateTime?
+  challengeDays      ChallengeDay[]
+
+  @@index([referredById, verifiedAt])
+}
+
+model AccessToken {
+  hash      String        @id
+  entryId   String
+  entry     WaitlistEntry @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime      @default(now())
+}
+
+model MemberSession {
+  hash      String        @id
+  entryId   String
+  entry     WaitlistEntry @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+}
+
+model MailMessage {
+  id          String        @id @default(uuid())
+  entryId     String
+  entry       WaitlistEntry @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  kind        String
+  payload     String
+  createdAt   DateTime      @default(now())
+  sentAt      DateTime?
+  attempts    Int           @default(0)
+  lockedUntil DateTime?
+
+  @@index([sentAt, createdAt])
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(uuid())
+  name      String   @db.VarChar(64)
+  visitor   String?  @db.VarChar(64)
+  source    String   @default("direct") @db.VarChar(32)
+  tool      String?  @db.VarChar(32)
+  createdAt DateTime @default(now())
+
+  @@index([createdAt, name])
+  @@index([visitor, createdAt])
+}
+
+model LaunchSettings {
+  id              String    @id @default("launch")
+  rewardsEnabled  Boolean   @default(false)
+  rewardRules     String    @default("")
+  rewardThreshold Int       @default(5)
+  approvedAt      DateTime?
+}
+
+model AdminAudit {
+  id        String   @id @default(uuid())
+  action    String
+  count     Int
+  createdAt DateTime @default(now())
+}
+
+model ChallengeDay {
+  id        String        @id @default(uuid())
+  entryId   String
+  entry     WaitlistEntry @relation(fields: [entryId], references: [id], onDelete: Cascade)
+  day       Int
+  createdAt DateTime      @default(now())
+
+  @@unique([entryId, day])
+}
+
+model RateLimitBucket {
+  key       String   @id
+  count     Int      @default(1)
+  expiresAt DateTime
+
+  @@index([expiresAt])
+}
